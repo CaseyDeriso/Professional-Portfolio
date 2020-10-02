@@ -30,11 +30,16 @@
   border-radius: 8px;
 }
 
+#work {
+  background-color: var(--primary-color);
+}
+
 
 section {
-  padding-top: 70px;
+  padding: 6% 0 20px 0;
   display: flex;
 }
+
 
 /* apply styles to the header */
 
@@ -119,6 +124,7 @@ header nav ul li a:hover {
 }
 
 /* apply styles to the about me section */
+
 
 #about-me .content {
   width: 70%;
@@ -258,6 +264,10 @@ footer h1 {
 }
 
 @media screen and (max-width: 768px) {
+
+  section {
+    padding-top: 20%;
+  }
 
   header nav {
     width: 100%;
