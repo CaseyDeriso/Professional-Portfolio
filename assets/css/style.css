@@ -219,6 +219,30 @@ header nav ul li a:hover {
   header nav ul li a{
     padding: 10px 3px;
   }
+
+  .example-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .example.first {
+    grid-column: span 2;
+  }
+
+  .example-text-container {
+    font-size: 14px;
+    bottom: 10px;
+    left: 11px;
+    padding: 5px;
+  }
+
+  #contact address {
+    flex-wrap: wrap;
+  }
+
+  #contact a {
+    margin: 0 20px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -226,11 +250,6 @@ header nav ul li a:hover {
     color: pink;
   }
 
-  header nav {
-    width: 100%;
-    padding: 10px 0;
-    justify-content: space-between;
-  }
 }
 
 @media screen and (max-width: 480px) {
