@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --primary-color: #f7f9fc;
+  --secondary-color: #5c5c5c;
+  --tertiary-color: #d3d4d9;
+  --dark-color: #2c2c2c;
+  --accent-color: #ff9000;
+}
+
+/* apply utility styles */
+
+.title {
+  font-size: 32px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.soft-edge {
+  border-radius: 8px;
+}
+
+
+#about-me p {
+  font-size: 18px;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+section {
+  padding-top: 70px;
+}
+
+/* apply styles to the header */
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 9999;
+  top: 0;
+  background-image: url("../photos/hero-back.jpg");
+  background-attachment: fixed;
+  background-position: 0 35%;
+  background-size: cover;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--secondary-color);
+  padding: 10px 10px 10px 40px;
+  background-color: white;
+  border-radius: 0 8px 8px 0;
+}
+
+
+header nav {
+  width: 45%;
+  margin: auto 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  border-bottom: 3px solid var(--dark-color);
+  transition: 200ms ease-in-out;
+}
+
+
+header nav ul li a:hover {
+  transform: scaleY(1.5 0);
+}
+
+
+/* apply styles to the hero */
+
+
+#hero {
+  background-image: url("../photos/hero-back.jpg");
+  background-size: cover;
+  background-position: 0 35%;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 89vh;
+  padding: 0;
+}
+
+.hero-title {
+  color: var(--primary-color);
+  margin: 16px;
+}
+
+.hero-title h2 {
+  display: flex;
+  border: 3px solid var(--tertiary-color);
+  background-color: var(--secondary-color);
+}
+
+
+/* apply styles to the work section */
+
+#work {
+  display: block;
+}
+
+
+.example-grid-container {
+  margin: 0 auto;
+  width: 60%;
+  display: grid;
+  gap: 8px 16px;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 18px;
+}
+
+.example-photo-container {
+  display: flex;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.096);
+  box-shadow: 5px 8px 4px rgba(0, 0, 0, 0.07);
+}
+
+.example img {
+  width: 100%;
+  opacity: 80%;
+  vertical-align: middle;
+}
+
+.example:hover {
+  transform: scale(1.01);
+}
+
+.example {
+  position: relative;
+  height: fit-content;
+  transition: 200ms;
+} 
+
+.example-text-container {
+  display: flex;
+  position: absolute;
+  flex-wrap: wrap;
+  bottom: 16px;
+  left: 16px;
+  padding: 10px 5px;
+  color: var(--primary-color);
+  background-color: rgba(0, 0, 0, 0.404);  
+}
+
+.example-text-container p {
+  padding-left: 5px;
+}
+
+/* specific match */
+.example.first {
+  grid-row: 1/ 3;
+  grid-column: 1/ 3;
+  box-shadow: 5px 8px 18px rgba(0, 0, 0, 0.02);
+  border-radius: 8px;
+}
+
+.example-text-container.first {
+  font-size: 28px;
+}
+
