@@ -86,7 +86,7 @@ header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
   font-size: 18px;
-  border-bottom: 3px solid var(--accent-color);
+  border-bottom: 3px solid var(--dark-color);
   transition: 200ms ease-in-out;
 }
 
