@@ -109,6 +109,7 @@ header nav ul li a:hover {
   align-items: flex-end;
   height: 89vh;
   padding: 0;
+  flex-direction: row;
 }
 
 .hero-title {
@@ -119,6 +120,7 @@ header nav ul li a:hover {
   background-color: var(--secondary-color);
 }
 
+
 .hero-title h2 {
   font-size: 32px;
 }
@@ -128,6 +130,24 @@ header nav ul li a:hover {
 
 #about-me .content {
   width: 70%;
+}
+
+.profile-photo-container {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  border-radius: 25%;
+  box-shadow: 5px 8px 4px rgba(0, 0, 0, 0.07);
+  margin: 0 10px;
+}
+
+.profile-photo-container img {
+  width: 100%;
+  height: 100%;
 }
 
 #about-me p {
@@ -242,6 +262,11 @@ footer h1::after {
     padding: 10px 3px;
   }
 
+  .profile-photo-container {
+    height: 125px;
+    width: 125px;
+  }
+
   .example-grid-container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
@@ -277,6 +302,11 @@ footer h1::after {
     width: 100%;
     padding: 10px 0;
     justify-content: space-between;
+  }
+
+  .profile-photo-container {
+    height: 100px;
+    width: 100px;
   }
 
   .example-grid-container {
@@ -318,6 +348,20 @@ footer h1::after {
     border-right: unset;
     border-bottom: 3px solid var(--dark-color);
     width: 40%;
+  }
+
+  #about-me .content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile-photo-container {
+    width: 200px;
+    height: 200px;
+    float: unset;
+    margin-bottom: 20px;
   }
 
   #about-me .content {
