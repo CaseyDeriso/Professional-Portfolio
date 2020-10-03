@@ -254,8 +254,9 @@ footer h1::after {
   content: '🔧';
 }
 
-/* apply styles to media queries (small desktop, tablet, phone */
+/* apply styles to media queries */
 
+/* small desktop */
 @media screen and (max-width: 1024px) {
 
   header nav ul li a{
@@ -292,6 +293,7 @@ footer h1::after {
   }
 }
 
+/* tablet */
 @media screen and (max-width: 768px) {
 
   section {
@@ -333,6 +335,7 @@ footer h1::after {
   }
 }
 
+/* phone */
 @media screen and (max-width: 480px) {
 
   section {
