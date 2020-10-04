@@ -30,14 +30,15 @@
   border-radius: 8px;
 }
 
-#work {
-  background-color: var(--primary-color);
-}
-
+/* apply styles to all sections */
 
 section {
   padding: 6% 0 20px 0;
   display: flex;
+}
+
+section:nth-child(2n) {
+  background-color: var(--primary-color);
 }
 
 
@@ -247,7 +248,7 @@ footer {
 footer h1 {
   color: var(--tertiary-color);
   padding: 20px 0 20px 40px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 footer h1::after {
