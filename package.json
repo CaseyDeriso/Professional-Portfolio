@@ -1,0 +1,22 @@
+{
+  "name": "professional_portfolio",
+  "version": "1.0.0",
+  "description": "This portfolio contains a stylish hero imgae with navigation to each section in a floating header with main sections displaying an about me, example projects, and contact information.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaseyDeriso/Professional-Portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaseyDeriso/Professional-Portfolio/issues"
+  },
+  "homepage": "https://github.com/CaseyDeriso/Professional-Portfolio#readme",
+  "dependencies": {}
+}
