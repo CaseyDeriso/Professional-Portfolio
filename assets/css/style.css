@@ -17,13 +17,19 @@
 /* apply utility styles */
 
 .title {
+  display: flex;
   color: var(--dark-color);
   font-size: 32px;
-  text-align: end;
+  text-align: center;
   padding: 20px;
-  justify-content: flex-start;
+  align-items: center;
   border-right: 3px solid var(--dark-color);
   width: 20%;
+}
+
+.title.first {
+ flex-direction: column;
+ margin-right: 8px;
 }
 
 .soft-edge {
@@ -276,10 +282,10 @@ footer h1::after {
     padding: 10px 3px;
   }
 
-  .profile-photo-container {
+  /* .profile-photo-container {
     height: 125px;
     width: 125px;
-  }
+  } */
 
   .example-grid-container {
     grid-template-columns: repeat(2, 1fr);
@@ -322,10 +328,10 @@ footer h1::after {
     justify-content: space-between;
   }
 
-  .profile-photo-container {
+  /* .profile-photo-container {
     height: 100px;
     width: 100px;
-  }
+  } */
 
   .example-grid-container {
     grid-template-columns: repeat(7, 1fr);
@@ -377,12 +383,12 @@ footer h1::after {
     align-items: center;
   }
 
-  .profile-photo-container {
+  /* .profile-photo-container {
     width: 200px;
     height: 200px;
     float: unset;
     margin-bottom: 20px;
-  }
+  } */
 
   #about-me .content {
     margin: 10px 20px;
