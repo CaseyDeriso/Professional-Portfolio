@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "webpack": "webpack --watch",
+    "build": "webpack"  
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,9 @@
     "url": "https://github.com/CaseyDeriso/Professional-Portfolio/issues"
   },
   "homepage": "https://github.com/CaseyDeriso/Professional-Portfolio#readme",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^5.22.0",
+    "webpack-cli": "^4.5.0"
+  }
 }
